@@ -1,0 +1,187 @@
+
+.brands-repair-section {
+    min-width: 320px;
+}
+
+.brands-repair-section__header {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.brands-repair-section__header-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: var(--menu-text-color);
+    margin: 16px 16px;
+}
+
+
+.swiper {
+    z-index: 0;
+}
+
+.brand-cards-swiper .swiper__wrapper {
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .brand-cards-swiper .swiper__wrapper {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.rotate-show-all-button {
+    transform: rotate(180deg);
+}
+
+
+
+.brand-cards-swiper .swiper__slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    background-color: var(--header-background-color);
+    border: 1px solid var(--divider-color);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .brand-cards-swiper .swiper-slide {
+        width: 224px;
+        height: 72px;
+    }
+}
+
+.more-button {
+    width: 40px;
+    height: 40px;
+    color: var(--user-button-color);
+    font-weight: bold;
+    border-radius: 50%;
+    border: 2px solid var(--user-button-color);
+    background-color: var(--header-background-color);
+}
+
+.brand-cards-swiper .swiper-slide__button {
+    padding: 0;
+    margin-right: 16px;
+}
+
+.brand-cards-swiper .swiper-pagination-brands {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.brand-cards-swiper .brand-cards-swiper__pagination {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.brand-cards-swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--swiper-pagination-bullet-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--swiper-pagination-bullet-active-color);
+}
+
+.swiper-slide__lenovo {
+    background-image: url(../img/repair-content/lenovo.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__bosch {
+    background-image: url(../img/repair-content/bosch.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__acer {
+    background-image: url(../img/repair-content/acer.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__apple {
+    background-image: url(../img/repair-content/apple.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__hp {
+    background-image: url(../img/repair-content/hp.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__samsung {
+    background-image: url(../img/repair-content/samsung.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__sony {
+    background-image: url(../img/repair-content/sony.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+.swiper-slide__viewsonic {
+    background-image: url(../img/repair-content/viewsonic.png);
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+}
+
+.show-all-container {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .show-all-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
+    .show-all-container__button {
+        display: flex;
+        width: 8px;
+        height: 12px;
+        background-image: url(../img/main/read-further-btn.png);
+        background-repeat: no-repeat;
+        background-color: var(--main-background-color);
+        margin-left: 24px;
+        margin-bottom: 32px;
+        margin-top: 8px;
+        border: none;
+    }
+
+    .show-all-container__label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin-left: 16px;
+        margin-bottom: 32px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .show-all-hide-brands {
+        height: 172px;
+    }
+
+    .brand-cards-swiper .swiper-pagination-brands {
+        display: none;
+    }
+}

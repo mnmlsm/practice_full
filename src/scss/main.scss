@@ -1,0 +1,239 @@
+@import "~normalize.css";
+@import "fonts";
+@import "settings";
+@import "main-header";
+@import "slide-menu";
+@import "brands-repair-section";
+@import "types-repair-section";
+@import "prices-repair-section";
+@import "footer";
+@import "feedback-form";
+@import "call-form";
+
+/* Main Content */
+.main-content {
+    background-color: var(--main-background-color);
+    min-width: 320px;
+    max-width: 1120px;
+}
+
+.decor-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 88px;
+}
+
+.decor-header__main-header {
+    margin-left: 16px;
+    font-size: 1.8em;
+}
+
+.text-decoration {
+    width: 4px;
+    height: 48px;
+    border-right: 2px solid var(--decoration-color);
+    background-color: var(--decoration-color);
+    border-radius: 0 6px 6px 0;
+}
+
+.main-content__service-buttons {
+    display: none;
+}
+
+@media screen and (min-width: 1120px) {
+    .main-content__header-user-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+    }
+}
+
+/* Showing service buttons on 1120px media query */
+@media screen and (min-width: 1120px) {
+    .main-content__service-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    .service-buttons__repair-button {
+        margin: 0 16px 0 8px;
+        background-image: url(../img/header/repair.png);
+    }
+
+    .service-buttons__status-button {
+        margin-left: 8px;
+        background-image: url(../img/header/status.png);
+    }
+}
+
+/* main menu */
+.main-menu__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    padding: 16px;
+    margin: 0 0 16px 0;
+    list-style-type: none;
+    color: var(--menu-text-color);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media screen and (min-width: 1120px) {
+    .main-menu__list {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+.main-menu__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.main-menu__item {
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 8px;
+}
+
+.main-menu__item--focused {
+    border: 2px solid var(--focused--border-color);
+    border-radius: 6px;
+    background-color: var(--header-background-color);
+}
+
+.main-menu__link:visited {
+    color: var(--menu-text-color);
+}
+
+.main-menu__link {
+    text-decoration: none;
+    color: var(--menu-text-color);
+}
+
+.company-description {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .company-description {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .company-description {
+        flex-direction: row;
+    }
+}
+
+.main-content__company-description {
+    padding-bottom: 32px;
+}
+
+.company-description__text {
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+.description-text__paragraph {
+    margin-left: 16px;
+    margin-right: 24px;
+    margin-top: 0
+}
+
+@media screen and (min-width:1120px) {
+    .description-text__paragraph {
+        margin-top: 0;
+    }
+}
+
+.second-paragraph {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .second-paragraph {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1120px) {
+    .second-paragraph {
+        display: block;
+    }
+}
+
+.second-paragraph__end-of-description {
+    display: none;
+}
+
+@media screen and (min-width: 1120px) {
+    .second-paragraph__end-of-description {
+        display: inline;
+    }
+}
+
+.company-description__read-further {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px 16px
+}
+
+.description-read-further__label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.further-button {
+    background-image: url(../img/main/read-further-btn.png);
+    width: 16px;
+    height: 16px;
+    background-color: var(--main-background-color);
+    border-radius: 50%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+}
+
+.description-read-further__button {
+    margin-right: 8px;
+}
+
+.company-description__logo {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .company-description__logo {
+        object-fit: cover;
+        width: 50%;
+        height: 30%;
+        margin-right: 24px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .company-description__logo {
+        object-fit: cover;
+        width: 50%;
+        height: 30%;
+        margin-right: 24px;
+        border-radius: 6px;
+    }
+}
+
+
+

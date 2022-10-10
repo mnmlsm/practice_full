@@ -1,0 +1,129 @@
+/* Page header */
+/* container */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1120px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    min-width: 320px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* page-header media */
+@media screen and (min-width: 1120px) {
+    .page-header {
+        display: none;
+    }
+}
+
+.logo-burger-btn-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 176px;
+}
+
+
+.page-header__logo-burger-btn-section {
+    margin-left: 16px;
+}
+
+.user-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 62, 121);
+    border-radius: 50%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-burger-btn-section__burger-button {
+    background-image: url(../img/header/burger.png);
+}
+
+/*  media for main logo */
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .main-logo {
+        order: 1;
+    }
+}
+
+.divider-image {
+    border-right: 2px solid var(--divider-color);
+    height: 32px;
+}
+
+.user-buttons-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connection-buttons {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 186px;
+}
+
+/* connections-buttons media */
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .connection-buttons {
+        display: flex;
+    }
+}
+
+/* Set of buttons pictures */
+.call-button {
+    background-image: url(../img/header/call.png);
+}
+
+.chat-button {
+    background-image: url(../img/header/message.png);
+}
+
+.profile-button {
+    background-image: url(../img/header/profile.png);
+}
+
+.connection-buttons__divider {
+    margin-right: 16px;
+}
+
+/* ==== */
+.service-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96px;
+}
+
+.user-buttons-set__service-buttons {
+    margin-right: 24px;
+}
+
+/* Buttons to be shown for 1120px */
+.service-buttons__repair-button {
+    background-image: url(../img/header/repair.png);
+}
+
+.service-buttons__status-button {
+    background-image: url(../img/header/status.png);
+}
